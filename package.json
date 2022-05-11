@@ -1,0 +1,24 @@
+{
+  "name": "web-search-engine-2021-avibansal20",
+  "version": "1.0.0",
+  "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7606711&assignment_repo_type=AssignmentRepo)",
+  "main": "value.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://avibansal20: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@github.com/SLHSCS/web-search-engine-2021-avibansal20.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SLHSCS/web-search-engine-2021-avibansal20/issues"
+  },
+  "homepage": "https://github.com/SLHSCS/web-search-engine-2021-avibansal20#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}
