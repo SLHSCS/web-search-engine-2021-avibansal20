@@ -1,0 +1,63 @@
+<div class="container">
+    <hr>
+    <h1>Create New Book</h1>
+    <hr>
+
+    <div>
+        <div class="row" id="books">
+        </div>
+    </div>
+</div>
+
+<div id="editBookModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Book</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form id="editForm" method="POST">
+                    <div class="form-group">
+                        <label for="ISBN">ISBN</label>
+                        <input class="form-control" name="isbn" id="isbn">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Title">Title</label>
+                        <input class="form-control" name="title" id="title">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="book-list.js"></script>
+
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">${book.title}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">${book.isbn}</h6>
+
+                    <div>Author: ${book.author}</div>
+                    <div>Publisher: ${book.publisher}</div>
+                    <div>Number Of Pages: ${book.numOfPages}</div>
+
+                    <hr>
+
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button types="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#editBookModal" onClick="setEditModal(${book.isbn})">
+                        Edit
+                    </button>
+                </div>
+            </div>
+        </div>
